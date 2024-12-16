@@ -19,7 +19,7 @@ const Login = () => {
 
   return (
     <div className="flex flex-row bg-upper_background bg-center bg-cover w-screen h-screen">
-      <div className="ml-auto mr-auto bg-gray-100 opacity-70 text-center max-w-106 bg-transparent bg-green h-1/2 w-1/4 mt-20 rounded-lg ">
+      <div className="ml-auto mr-auto outline shadow-2xl text-center max-w-106  h-1/2 w-1/4 mt-20 rounded-lg ">
         <h2 className="mt-10 text-center text-2xl/9 font-bold">
           Sign in to your account
         </h2>
@@ -51,7 +51,7 @@ const Login = () => {
           {error && <p style={{ color: "red" }}>{error}</p>}
           <button
             type="submit"
-            className="mt-3 flex w-full justify-center rounded-md bg-indigo-800 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="mt-3 flex   w-full justify-center rounded-full bg-indigo-800 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Login
           </button>
