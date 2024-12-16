@@ -19,13 +19,13 @@ const Login = () => {
 
   return (
     <div className="flex flex-row bg-upper_background bg-center bg-cover w-screen h-screen">
-      <div className="ml-auto mr-auto bg-gray-45 text-center max-w-106 bg-transparent bg-green h-1/2 w-1/4 mt-20 rounded-lg ">
-        <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
+      <div className="ml-auto mr-auto outline shadow-2xl text-center max-w-106  h-1/2 w-1/4 mt-20 rounded-lg ">
+        <h2 className="mt-10 text-center text-2xl/9 font-bold">
           Sign in to your account
         </h2>
         <form onSubmit={handleSubmit}>
           <div className="">
-            <label className="block text-sm/6 font-medium text-gray-900 text-left">
+            <label className="block text-sm/6 font-medium text-black text-left ml-2 opacity-100">
               Email address
             </label>
             <input
@@ -37,7 +37,7 @@ const Login = () => {
             />
           </div>
           <div className="mt-3">
-            <label className="text-left block text-sm/6 font-medium text-gray-900">
+            <label className="text-left block text-sm/6 font-medium text-black ml-2">
               Password
             </label>
             <input
@@ -51,7 +51,7 @@ const Login = () => {
           {error && <p style={{ color: "red" }}>{error}</p>}
           <button
             type="submit"
-            className="mt-3 flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="mt-3 flex   w-full justify-center rounded-full bg-indigo-800 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Login
           </button>
